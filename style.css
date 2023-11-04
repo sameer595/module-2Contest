@@ -44,8 +44,19 @@
     min-width: 100px !important;
     padding: 5px;
     border: 1px solid #C4C7C5;
-
+    /* overflow-x: scroll;
+    overflow-y: scroll; */
 }
+/* .cell::-webkit-scrollbar {
+    display: none;
+  } */
+  .main-cell{
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+  .main-cell::-webkit-scrollbar {
+    display: none;
+  }
 
 .row {
     display: flex;
