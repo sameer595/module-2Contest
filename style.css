@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.options {
+    background-color: rgb(44, 145, 81);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.options>label {
+    cursor: pointer;
+}
+
+.root-container {
+    width: 100vw;
+    height: 75vh;
+    overflow: scroll;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.header-cell {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+}
+
+.sno {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+}
+
+.cell {
+    min-width: 100px !important;
+    padding: 5px;
+    border: 1px solid #C4C7C5;
+
+}
+
+.row {
+    display: flex;
+}
+
+.main {
+    height: 100px;
+}
+
+.row {
+    display: flex;
+}
+
+.body {
+    display: flex;
+    width: fit-content;
+}
+
+.header>div:nth-child(1) {
+    left: 0;
+    top: 0 !important;
+    position: sticky;
+    z-index: 100;
+    background-color: #e7e7e7;
+}
+
+.sno-cell {
+    text-align: center;
+    width: 100px !important;
+}
+
+.bottom-section {
+    display: flex;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section>input {
+    width: 90%;
+    padding: 5px;
+}
+
+#active-cell {
+    margin-right: 40px;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    /* width: 100%; */
+    height: 25px;
+    margin-top: 3px;
+}
+.abc{
+    display: flex;
+}
+
+.add-sheet {
+    width: 100px;
+    background-color: rgb(169, 172, 172);
+    padding: 5px 2px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.btn {
+    font-size: larger;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+
+.option-btn {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+.option-btn:hover {
+    background-color: #ededed;
+}
+
+.hidden-input {
+    width: 0 !important; 
+    height: 0;
+    border: none ;
+}
+.hidden-input:checked + label {
+    background-color: #ededed;
+}
+.coloured{
+    background-color: yellow;
+}
