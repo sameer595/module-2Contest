@@ -192,15 +192,17 @@ padding: 10px;
     background-color: #f1f2f6;
     color: #218c74;
     border-radius: 2px;
+    color: black !important;
 }
 
 .page-action {
     width: 3.5rem;
     height: 2rem;
     text-align: center;
-    color: #000000;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
