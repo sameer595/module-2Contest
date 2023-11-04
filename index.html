@@ -13,7 +13,22 @@
 
 <body>
   <section class="tools">
+    <div class="page-actions-cont">
+      <div class="page-action">File</div>
+      <div class="page-action selected-page-action">Home</div>
+      <div class="page-action">Insert</div>
+      <div class="page-action">Layout</div>
+      <div class="page-action">Help</div>
+  </div>
+
+
     <form id="form" class="options" onchange="onFormChange()">
+     
+      <!-- <div class="cutcopypaste"> -->
+        <span class="material-symbols-outlined option-btn" onclick="cutCell()" id="cut">cut</span>
+        <span class="material-symbols-outlined option-btn" onclick="copyCell()" id="copy">content_copy</span>
+        <span class="material-symbols-outlined option-btn" onclick="pasteCell()" id="paste">content_paste </span>
+      <!-- </div> -->
       <select class="font-family-prop" name="fontfamily" id="fontfamily">
         <option value="monospace">MonoSpace</option>
         <option value="sans-serif">Sans-serif</option>
@@ -32,11 +47,6 @@
         <option value="28">28</option>
         <option value="30">30</option>
     </select>
-      <!-- <div class="cutcopypaste"> -->
-        <span class="material-symbols-outlined option-btn" onclick="cutCell()" id="cut">cut</span>
-        <span class="material-symbols-outlined option-btn" onclick="copyCell()" id="copy">content_copy</span>
-        <span class="material-symbols-outlined option-btn" onclick="pasteCell()" id="paste">content_paste </span>
-      <!-- </div> -->
       <div>
         <input type="checkbox" id="bold" class="hidden-input" name="bold" />
         <label class="material-icons option-btn" for="bold">
