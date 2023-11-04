@@ -14,26 +14,29 @@
 <body>
   <section class="tools">
     <form id="form" class="options" onchange="onFormChange()">
-      <select name="fontfamily" id="fontfamily" aria-placeholder="font-family">
-        <option value="'Courier New', Courier, monospace">Courier New</option>
-        <option value="'Times New Roman', Times, serif">
-          Times New Roman
-        </option>
-        <option value="Arial, Helvetica, sans-serif">Arial Helvatica</option>
-      </select>
-      <input type="number" name="fontsize" min="8" max="24" value="16" id="fontsize" placeholder="Font Size" />
+      <select class="font-family-prop" name="fontfamily" id="fontfamily">
+        <option value="monospace">MonoSpace</option>
+        <option value="sans-serif">Sans-serif</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="cursive">Cursive</option>
+    </select>
 
-      <div class="cutcopypaste">
+      <select class="font-size-prop" name="fontsize" id="fontsize">
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+        <option value="24">24</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+    </select>
+      <!-- <div class="cutcopypaste"> -->
         <span class="material-symbols-outlined option-btn" onclick="cutCell()" id="cut">cut</span>
         <span class="material-symbols-outlined option-btn" onclick="copyCell()" id="copy">content_copy</span>
         <span class="material-symbols-outlined option-btn" onclick="pasteCell()" id="paste">content_paste </span>
-      </div>
-
-      <div id="search-container">
-        <input type="text" id="search-input" placeholder="Search...">
-        <button id="search-button" onclick=" handleSearch() ">Search</button>
-      </div>
-<!-- <div class="cutcopypaste"> -->
+      <!-- </div> -->
       <div>
         <input type="checkbox" id="bold" class="hidden-input" name="bold" />
         <label class="material-icons option-btn" for="bold">
@@ -52,12 +55,10 @@
       <div>
         <input type="radio" name="textalign" id="left" class="hidden-input" checked value="left" />
         <label class="material-icons option-btn" for="left">format_align_left</label>
-
-        <input type="radio" name="textalign" id="right" class="hidden-input" value="right" />
-        <label class="material-icons option-btn" for="right">format_align_right</label>
-
         <input type="radio" name="textalign" id="center" class="hidden-input" value="center" />
         <label class="material-icons option-btn" for="center">format_align_center</label>
+        <input type="radio" name="textalign" id="right" class="hidden-input" value="right" />
+        <label class="material-icons option-btn" for="right">format_align_right</label>  
       </div>
 
       <div>
@@ -87,6 +88,8 @@
   </section>
 
   <section class="root-container">
+    
+    <div class="cell1"> </div>
     <div class="header"></div>
     <div class="body">
       <div class="sno"></div>

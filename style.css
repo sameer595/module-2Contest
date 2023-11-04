@@ -31,7 +31,8 @@
 .header-cell {
     width: 100px;
     padding: 5px;
-    text-align: center;
+    text-align: center !important;
+    align-items: center;
 }
 
 .sno {
@@ -41,19 +42,27 @@
 }
 
 .cell {
-    min-width: 100px !important;
-    padding: 5px;
+     min-width: 100px !important;
+    padding : 5px;
     border: 1px solid #C4C7C5;
-    /* overflow-x: scroll;
-    overflow-y: scroll; */
+    height: 1.25rem;
+    width: 5rem; 
+    overflow-x: auto;
+    border: 1px solid #dfe4ea;
+    outline: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-/* .cell::-webkit-scrollbar {
-    display: none;
-  } */
-  .main-cell{
-    overflow-x: scroll;
-    overflow-y: scroll;
-  }
+.cell1{
+    padding : 5px;
+    background-color: rgb(220, 220, 220);
+    height: 1.3rem;
+    width: 6.35rem;
+    position: fixed;
+    left: 0px;
+    z-index: 100;
+}
   .main-cell::-webkit-scrollbar {
     display: none;
   }
@@ -98,6 +107,7 @@
 .bottom-section>input {
     width: 90%;
     padding: 5px;
+    border-radius: 4px;
 }
 
 #active-cell {
@@ -153,3 +163,9 @@
 .coloured{
     background-color: yellow;
 }
+
+
+/* #search-input{
+    width: 200px;
+    height: 15px;
+} */
